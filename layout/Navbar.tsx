@@ -100,7 +100,7 @@ const Navbar = () => {
                     </Link>
 
                     <Link href='#'>
-                        <a className='text-sm text-dark-gray'>help</a>
+                        <a className='text-sm text-dark-gray hover:text-tal-blue hover:underline'>help</a>
                     </Link>
 
                 </div>
@@ -120,11 +120,11 @@ const Navbar = () => {
                     </div>
 
                     <div className='flex justify-center ml-1'>
-                        <div className='flex justify-center items-center h-8 w-8 bg-red-400 rounded-full'>
+                        <div className='flex justify-center items-center h-8 w-8 bg-red-400 rounded-full cursor-pointer'>
                             <ImageWrapper src={heartIcon} />
                         </div>
 
-                        <div className='flex justify-center items-center ml-2     h-8 w-14 bg-green-800 rounded-[16px]'>
+                        <div className='flex justify-center items-center ml-2     h-8 w-14 bg-green-800 rounded-[16px] cursor-pointer'>
                             <ImageWrapper src={cartwIcon} />
                             <span className='text-white ml-1'>0</span>
                         </div>

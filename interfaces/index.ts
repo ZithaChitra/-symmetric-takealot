@@ -1,3 +1,8 @@
+
+
+
+
+
 // You can include shared interfaces/types in a separate file
 // and then use them in any component by importing them. For
 // example, to import the interface below do:
@@ -7,4 +12,16 @@
 export type User = {
   id: number
   name: string
+}
+
+
+
+export interface ProductProps{
+  id: string | number,
+  title: string,
+  price: string | number,
+  category: string,
+  description: string,
+  image: string,
+
 }
