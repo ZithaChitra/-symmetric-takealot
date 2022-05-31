@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 import ImageWrapper from '../components/ImageWrapper'
 
-import menuIcon from '../public/icons/menu.svg'
-import searchIcon from '../public/icons/search.svg'
-import cartIcon from '../public/icons/cart.svg'
-import cartwIcon from '../public/icons/cart-white.svg'
-import heartIcon from '../public/icons/heart.svg'
-import logo_sm from '../public/images/icons/logo-sm.svg'
+import menuIcon from '../public/icons/header/menu.svg'
+import searchIcon from '../public/icons/header/search.svg'
+import cartIcon from '../public/icons/header/cart.svg'
+import cartwIcon from '../public/icons/header/cart-white.svg'
+import heartIcon from '../public/icons/header/heart.svg'
+import logo_sm from '../public/icons/header/logo-sm.svg'
 
 
 

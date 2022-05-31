@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Navbar from './Navbar'
+import Footer from './Footer'
 
 
 const Layout: React.FC<any> = ({ children }) => {
@@ -10,6 +11,7 @@ const Layout: React.FC<any> = ({ children }) => {
       <div className='max-w-2xl mx-auto px-3 lg:max-w-7xl lg:px-8'>
         {children}
       </div>
+      <Footer />
     </div>
   )
 }

@@ -14,6 +14,7 @@ module.exports = {
       colors: {
         'tal-blue': '#0b79bf',
         'dark-gray': '#4d4d4f',
+        'gray-rgba': 'rgba(255,255,255,0.6)'
       }
     },
   },
