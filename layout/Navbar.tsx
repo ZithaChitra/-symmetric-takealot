@@ -12,62 +12,6 @@ import logo_sm from '../public/icons/header/logo-sm.svg'
 
 
 
-const pri_links = [
-    {
-        title: 'Login',
-        url: '#'
-    },
-    {
-        title: 'Register',
-        url: '#'
-    },
-    {
-        title: 'Orders',
-        url: '#'
-    },
-    {
-        title: 'My Account',
-        url: '#',
-        sec_links: [
-            {
-                title: 'My Account',
-                url: '#'
-            },
-            {
-                title: 'Track Order',
-                url: '#'
-            },
-            {
-                title: 'Returns',
-                url: '#'
-            },
-            {
-                title: 'Credit and Funds',
-                url: '#'
-            },
-            {
-                title: 'Product Reviews',
-                url: '#'
-            },
-            {
-                title: 'Invoices',
-                url: '#'
-            },
-            {
-                title: 'Personal Details',
-                url: '#'
-            },
-            {
-                title: 'Digital Library',
-                url: '#'
-            },
-            {
-                title: 'Help',
-                url: '#'
-            },
-        ]
-    },
-]
 
 
 const Navbar = () => {
@@ -142,3 +86,63 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+const pri_links = [
+    {
+        title: 'Login',
+        url: '#'
+    },
+    {
+        title: 'Register',
+        url: '#'
+    },
+    {
+        title: 'Orders',
+        url: '#'
+    },
+    {
+        title: 'My Account',
+        url: '#',
+        sec_links: [
+            {
+                title: 'My Account',
+                url: '#'
+            },
+            {
+                title: 'Track Order',
+                url: '#'
+            },
+            {
+                title: 'Returns',
+                url: '#'
+            },
+            {
+                title: 'Credit and Funds',
+                url: '#'
+            },
+            {
+                title: 'Product Reviews',
+                url: '#'
+            },
+            {
+                title: 'Invoices',
+                url: '#'
+            },
+            {
+                title: 'Personal Details',
+                url: '#'
+            },
+            {
+                title: 'Digital Library',
+                url: '#'
+            },
+            {
+                title: 'Help',
+                url: '#'
+            },
+        ]
+    },
+]

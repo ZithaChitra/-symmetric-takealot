@@ -11,6 +11,10 @@ import payfast from '../public/icons/footer/payfast.svg'
 import visa from '../public/icons/footer/visa.svg'
 import play_store from '../public/icons/footer/app_store.svg'
 import app_store from '../public/icons/footer/play_store.svg'
+import facebook from '../public/icons/footer/icons8-facebook.svg'
+import twitter from '../public/icons/footer/icons8-twitter-circled.svg'
+import instagram from '../public/icons/footer/icons8-instagram.svg'
+
 
 
 const paymentIcons = [a_express, d_club, m_card, ozow, payfast, visa]
@@ -20,19 +24,18 @@ const Footer = () => {
     return (
         <div className='mt-5 bg-white pt-5'>
 
-            <div className='lg:flex'>
+            <div className='lg:flex lg:justify-center mb-5'>
 
                 {footerLinks.map((link, index) => {
 
                     return (
                         <div className='hidden lg:block w-44' key={index}>
-                            <h3 className='font-bold text-sm'>{link.title}</h3>
+                            <h3 className='h-10 font-bold text-[15px]'>{link.title}</h3>
 
                             <ul>
                                 {link.subcategories.map((subcat, index) => {
-
                                     return (
-                                        <li key={index} className='text-dark-gray hover:underline hover:text-tal-blue text-xs'>
+                                        <li key={index} className='h-5 mb-1 text-dark-gray hover:underline hover:text-tal-blue text-sm'>
                                             <Link href='#'>
                                                 {subcat}
                                             </Link>
@@ -48,10 +51,10 @@ const Footer = () => {
 
 
 
-                <div className='md:flex justify-between lg:flex-col lg:justify-start'>
+                <div className='md:flex justify-around lg:flex-col lg:justify-start'>
 
                     <div className='pb-5'>
-                        <h3 className='text-center mb-3 font-bold text-sm lg:text-left'>Download Our Apps</h3>
+                        <h3 className='text-center lg:h-10 mb-3 font-bold text-sm md:text-left lg:text-left lg:text-[15px]'>Download Our Apps</h3>
 
                         <div className='flex justify-center gap-2'>
                             <ImageWrapper src={play_store} width='w-[135px]' height='h-10' />
@@ -60,19 +63,23 @@ const Footer = () => {
                     </div>
 
 
-                    <div className='md:flex lg:flex-col lg:justify-start lg:items-start'>
+                    <div className='lg:flex lg:flex-col lg:justify-start lg:items-start'>
                         <div>
-                            <h3 className='text-center mb-3 font-bold text-sm'>Follow Us</h3>
-
+                            <h3 className='text-center md:text-left mb-1 font-bold text-sm lg:text-[15px]'>Follow Us</h3>
+                            <div className='flex justify-center md:justify-start mb-4'>
+                                <ImageWrapper src={facebook} width='w-[25px]' height='h-[25px]' />
+                                <ImageWrapper src={twitter} width='w-[25px]' height='h-[25px]' />
+                                <ImageWrapper src={instagram} width='w-[25px]' height='h-[25px]' />
+                            </div>
                         </div>
 
                         <div>
-                            <h3 className='text-center mb-1 font-bold text-sm'>Takealot.group</h3>
+                            <h3 className='text-center mb-1 font-bold text-sm lg:text-[15px]'>Takealot.group</h3>
                             <Link href='#'>
-                                <span className='block text-center lg:text-left text-dark-gray hover:underline hover:text-tal-blue text-xs'> Superbalist </span>
+                                <span className='block text-center md:text-left md:text-sm md:mb-1 text-dark-gray hover:underline hover:text-tal-blue text-xs'> Superbalist </span>
                             </Link>
                             <Link href='#'>
-                                <span className='block text-center lg:text-left text-dark-gray hover:underline hover:text-tal-blue text-xs'> Mr D Food </span>
+                                <span className='block text-center md:text-left md:text-sm text-dark-gray hover:underline hover:text-tal-blue text-xs'> Mr D Food </span>
                             </Link>
                         </div>
                     </div>
@@ -161,3 +168,7 @@ const footerLinks = [
         ]
     },
 ]
+
+
+
+
