@@ -48,9 +48,6 @@ const Footer = () => {
                 })}
 
 
-
-
-
                 <div className='md:flex justify-around lg:flex-col lg:justify-start'>
 
                     <div className='pb-5'>
@@ -86,14 +83,6 @@ const Footer = () => {
 
                 </div>
             </div>
-
-
-
-
-
-
-
-
 
 
             <div className='py-5 h-40 lg:h-20 bg-tal-blue w-full flex flex-col items-center justify-center'>

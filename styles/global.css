@@ -22,6 +22,8 @@
 
 body{
     background-color: var(--light-bg-gray);
+    padding: 0;
+    margin: 0;
 }
 
 
