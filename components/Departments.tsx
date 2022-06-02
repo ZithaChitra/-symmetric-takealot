@@ -1,17 +1,31 @@
 import React from 'react'
 
-const Departments = () => {
-  return (
-    <div className='w-[200px]'>
-        <button className='bg-dark-gray-extra h-8 w-full rounded-md text-white'>
-            Shop by Department
-        </button>
-        <div>
-            
+import DeptmentSideModal from './DeptmentSideModal'
 
+const Departments = () => {
+    return (
+        <div className='w-[200px] '>
+            <button className='bg-dark-gray-extra h-8 w-full pl-[13px] rounded-md text-white text-left text-[14px]'>
+                Shop by Department
+            </button>
+            <div className='relative'>
+                <ul className='z-20 absolute w-full drop-shadow bg-white py-2'>
+                    {departments.map((dep, index) => {
+                        return (
+                            <li key={index}className='h-[20px] cursor-pointer hover:bg-tal-blue hover:text-white pl-[13px] text-[13px] text-dark-gray'>
+                                {dep.title}
+
+                                {/* <div className='hidden absolute'>
+                                    <DeptmentSideModal />
+                                </div> */}
+                            </li>   
+                        )
+                    })}
+                </ul>
+
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Departments

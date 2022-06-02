@@ -5,6 +5,8 @@ import ImageWrapper from '../components/ImageWrapper'
 import Departments from '../components/Departments'
 
 import menu from '../public/icons/header/menu-white.svg'
+import search from '../public/icons/header/search-white.svg'
+
 
 
 
@@ -16,7 +18,7 @@ import menu from '../public/icons/header/menu-white.svg'
 const HeroeSearch = () => {
 
   return (
-    <div className='bg-tal-blue py-[8px]'>
+    <div className='bg-tal-blue py-[8px] px-3 hidden md:block'>
       <div className='lg:max-w-7xl lg:mx-auto px-[8px]'>
         <div className='flex lg:gap-5'>
 
@@ -50,6 +52,10 @@ const HeroeSearch = () => {
                         })}
                       </select>
                     </div>
+
+                    <button className='flex justify-center items-center bg-dark-gray-extra w-[50px] h-[30px]'>
+                        <ImageWrapper src={search} width='w-4' height='h-4'/>
+                    </button>
                   </div>
 
 
