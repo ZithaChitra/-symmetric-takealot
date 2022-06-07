@@ -89,7 +89,7 @@ const Footer = () => {
                 <div className='flex mb-3'>
                     {paymentIcons.map((icon, index) => {
                         return (
-                            <div className='mx-3'>
+                            <div className='mx-3' key={index}>
                                 <ImageWrapper src={icon} key={index} width='w-11' height='h-3.5' />
                             </div>
                         )

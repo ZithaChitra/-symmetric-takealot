@@ -17,6 +17,7 @@ module.exports = {
         'dark-gray': '#4d4d4f',
         'dark-gray-extra': 'rgb(64, 64, 66)',
         'light-gray': 'rgb(213, 213, 213)',
+        'light-gray-extra': 'rgba(244, 244, 244, 0.5)',
         'gray-rgba': 'rgba(255,255,255,0.6)'
       }
     },
